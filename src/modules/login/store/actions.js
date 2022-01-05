@@ -9,6 +9,7 @@ export const ActionDoLogin = ({dispatch},payload) => {
   })
 }
 
+
 export const setUser = ({commit},payload) => {
 commit(types.set_user,payload)
 }

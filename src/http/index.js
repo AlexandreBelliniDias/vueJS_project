@@ -8,9 +8,9 @@ const http = Vue.http
 
 http.options.root = 'https://djbnrrib9e.execute-api.us-east-2.amazonaws.com/v1/'
 
-//set token to all headers
+
 const headerToken = token => {
-    http.headers.common['Autorization'] = `Bearer ${token}`
+    http.headers.common['Authorization'] = `Bearer ${token}`
 }
 
 Object.keys(services).map(service =>{
