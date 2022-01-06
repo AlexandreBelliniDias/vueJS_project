@@ -15,7 +15,7 @@
           </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">
+        <a class="nav-link" href="/#/create">
           <i class="fa fa-prescription-bottle"></i>
           New Med
         </a>
@@ -33,15 +33,15 @@
           <i class="fa fa-medkit">
               <span class="badge badge-danger">11</span>
           </i>
-          Link
+          Service
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link">
-          <i class="fa fa-medkit">
-              <span class="badge badge-danger">11</span>
+          <i class=" fa fa-solid fa-book-medical">
+              <span class="badge badge-danger">2</span>
           </i>
-          Link
+          Information
         </a>
       </li>
      
@@ -56,7 +56,7 @@
      
     </ul>
       <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" v-model="form.search" minlength="3">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" v-model="form.search" :minlength="3">
       <button  class="btn btn-outline-success my-2 my-sm-0" @click.prevent="search()">Search</button>
     </form>
     </div>
@@ -176,6 +176,9 @@ html{
   background-color: rgb(43, 43, 43);
   color: rgb(255, 255, 255);
   font-size: small;
+}
+li{
+  cursor: pointer;
 }
 .table th{
   border-top: none;
